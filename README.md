@@ -7,4 +7,4 @@ The traditional Linux libelf implementation, which is provided by elfutils, has 
 ## Building
 This implementation of libelf depends on libbsd at build time.
 
-Building is a simple matter of running `make` in the source directory. There is no install rule in the makefile, but manpages and the resultant libelf.so can be easily copied into your location of choice.
+Building is a simple matter of running `make` in the source directory. There is no install rule in the makefile, but manpages and the resultant libelf.so can be easily copied into your location of choice. The headers to be installed are `elftoolchain-common/elfdefinitions.h`, `gelf.h` and `elf.h` into `$PREFIX/include`.
