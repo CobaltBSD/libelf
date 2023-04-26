@@ -11,3 +11,5 @@ install:
 	cp -v libelf.so $(DESTDIR)$(PREFIX)/lib
 	mkdir -pv $(DESTDIR)$(PREFIX)/share/man/man3
 	cp -v *.3 $(DESTDIR)$(PREFIX)/share/man/man3
+	mkdir -v $(DESTDIR)$(PREFIX)/include
+	cp -v libelf.h gelf.h elftoolchain-common/elfdefinitions.h $(DESTDIR)$(PREFIX)/include
